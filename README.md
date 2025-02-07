@@ -13,4 +13,10 @@ C JAVA  C++  PYTHON  JAVASCRIPT  RUST  GOLANG
   This prevents validation rules from being Bypassed by manipulating client-side code. 
   When a user submits a form, the server checks the input data for validity and rejects it if it doesn't meet the criteria. Client-side JavaScript should not be relied upon for validation.
 
- 1.2 Identify all data sources and classify them Classify data sources as trusted (e.g., internal databases) or untrusted (e.g., user input, external APIs). Validate all data from untrusted sources to prevent malicious input. When processing data from user-submitted forms and external APIs, ensure that all input is thoroughly validated, regardless of its source.
+# 1.2 Identify all data sources and classify them 
+ Classify data sources as trusted (e.g., internal databases) or untrusted (e.g., user input, external APIs). Validate all data from untrusted sources to prevent malicious input. 
+ When processing data from user-submitted forms and external APIs, ensure that all input is thoroughly validated, regardless of its source.
+
+# 1.3 Centralized input validation routine
+Implement a centralized input validation routine to ensure consistent and thorough validation across the application.
+Create a single validation function that is called for all user input, ensuring that every input is consistently validated according to predened rules.
